@@ -2,7 +2,7 @@
 
 This Python application provides a secure user registration and login system featuring a robust, multi-stage encryption pipeline and a clean Graphical User Interface (GUI) built with Tkinter.
 
-## ✨ Features
+##  Features
 
 *   **Multi-Stage Encryption:** Chains SHA-256, DES, AES, and RSA to secure user credentials.
 *   **Strong Password Validation:** Enforces complexity (length, casing, digits, and special characters).
@@ -11,7 +11,7 @@ This Python application provides a secure user registration and login system fea
 
 ---
 
-## 🔐 The Encryption Pipeline
+##  The Encryption Pipeline
 
 To ensure **deterministic authentication** (the same input always produces the same output), the app processes passwords through the following flow:
 
@@ -20,13 +20,3 @@ To ensure **deterministic authentication** (the same input always produces the s
 3.  **AES Encryption:** The result is encrypted with **AES-128 (ECB mode)** using a 16-byte key derived from the username.
 4.  **RSA Encryption:** Final encryption using **RSA**. A 1024-bit keypair is generated, seeded by the username to maintain consistency across sessions.
 
-
-
----
-
-## 🛠️ Installation & Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/yourusername/repository-name.git](https://github.com/yourusername/repository-name.git)
-   cd repository-name
